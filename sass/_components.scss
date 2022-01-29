@@ -438,3 +438,19 @@
     z-index: 1;
   }
 }
+
+
+/////////////////////////////////////
+//Call to action_name
+.cta{
+  padding: 3.5rem 0;
+  text-align: center;
+
+  &__book-now{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+
+  }
+}
