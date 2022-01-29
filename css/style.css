@@ -263,8 +263,13 @@ body {
   background-color: transparent;
   cursor: pointer;
   transition: all .3s; }
+  .btn-inline span {
+    margin-left: 3px;
+    transition: all .3s; }
   .btn-inline:hover {
     color: var(--color-grey-dark-1); }
+    .btn-inline:hover span {
+      margin-left: 8px; }
   .btn-inline:focus {
     outline: none;
     animation: pulsate 1s infinite; }
@@ -323,9 +328,13 @@ body {
   background-color: #FFF;
   box-shadow: var(--shadow-light);
   padding: 3rem 1rem;
-  margin-bottom: 3.5rem; }
+  margin-bottom: 3.5rem;
+  position: relative;
+  overflow: hidden; }
   .review__text {
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    z-index: 10;
+    position: relative; }
   .review__user {
     display: flex;
     align-items: center; }
@@ -349,3 +358,13 @@ body {
     font-size: 2.2rem;
     color: var(--color-primary);
     font-weight: 300; }
+  .review::before {
+    content: "\201C";
+    position: absolute;
+    top: -2.75rem;
+    left: -1rem;
+    font-size: 19rem;
+    line-height: 1;
+    color: var(--color-grey-light-2);
+    font-family: sans-serif;
+    z-index: 1; }
