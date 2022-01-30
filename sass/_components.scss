@@ -16,11 +16,13 @@
 
   @media only screen and (max-width: $bp-smallest){
     order: 1;
+    flex: 0 0 100%;
+    background-color: var(--color-grey-light-2);
   }
   &__input {
     font-family: inherit;
-    font-size: inherit;
     background-color: var(--color-grey-light-2);
+    font-size: inherit;
     border: none;
     color: inherit;
     padding: 0.7rem 2rem;
