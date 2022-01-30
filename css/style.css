@@ -265,8 +265,8 @@ body {
 .legal {
   color: var(--color-grey-light-4);
   font-size: 1.2rem;
-  text-align: center;
-  padding: 2.5rem; }
+  padding: 2.5rem;
+  text-align: center; }
   @media only screen and (max-width: 56.25em) {
     .legal {
       display: none; } }
@@ -274,8 +274,8 @@ body {
 .gallery {
   display: flex; }
   .gallery__photo {
-    width: 100%;
-    display: block; }
+    display: block;
+    width: 100%; }
 
 .overview {
   display: flex;
