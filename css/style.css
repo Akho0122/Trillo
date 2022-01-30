@@ -54,7 +54,7 @@ body {
 .header {
   font-size: 1.4rem;
   height: 7rem;
-  background-color: #FFF;
+  background-color: #fff;
   border-bottom: var(--line);
   display: flex;
   justify-content: space-between;
@@ -86,9 +86,12 @@ body {
   @media only screen and (max-width: 56.25em) {
     .detail {
       padding: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .detail {
+      flex-direction: column; } }
 
 .description {
-  background-color: #FFF;
+  background-color: #fff;
   box-shadow: var(--shadow-light);
   padding: 3rem;
   flex: 0 0 60%;
@@ -97,6 +100,10 @@ body {
     .description {
       padding: 2rem;
       margin-right: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .description {
+      margin-right: 0;
+      margin-bottom: 3rem; } }
 
 .user-reviews {
   flex: 1;
